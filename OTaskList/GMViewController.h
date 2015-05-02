@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface GMViewController : UIViewController
+- (IBAction)reorderBarButtonPressed:(UIBarButtonItem *)sender;
+- (IBAction)adTaskBarButtonPressed:(UIBarButtonItem *)sender;
+@property (strong, nonatomic) IBOutlet UITableView *tableViewMain;
 
 @end

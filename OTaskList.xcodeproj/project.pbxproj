@@ -21,6 +21,9 @@
 		2C43040A1AF477E800E5DCBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4303EC1AF477E800E5DCBC /* UIKit.framework */; };
 		2C4304121AF477E800E5DCBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C4304101AF477E800E5DCBC /* InfoPlist.strings */; };
 		2C4304141AF477E800E5DCBC /* OTaskListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4304131AF477E800E5DCBC /* OTaskListTests.m */; };
+		2C43041F1AF4799F00E5DCBC /* GMAddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C43041E1AF4799F00E5DCBC /* GMAddTaskViewController.m */; };
+		2C4304221AF479BD00E5DCBC /* GMDetailTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4304211AF479BD00E5DCBC /* GMDetailTaskViewController.m */; };
+		2C4304251AF479DC00E5DCBC /* GMEditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4304241AF479DC00E5DCBC /* GMEditTaskViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		2C43040F1AF477E800E5DCBC /* OTaskListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OTaskListTests-Info.plist"; sourceTree = "<group>"; };
 		2C4304111AF477E800E5DCBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C4304131AF477E800E5DCBC /* OTaskListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTaskListTests.m; sourceTree = "<group>"; };
+		2C43041D1AF4799F00E5DCBC /* GMAddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMAddTaskViewController.h; sourceTree = "<group>"; };
+		2C43041E1AF4799F00E5DCBC /* GMAddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMAddTaskViewController.m; sourceTree = "<group>"; };
+		2C4304201AF479BD00E5DCBC /* GMDetailTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMDetailTaskViewController.h; sourceTree = "<group>"; };
+		2C4304211AF479BD00E5DCBC /* GMDetailTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMDetailTaskViewController.m; sourceTree = "<group>"; };
+		2C4304231AF479DC00E5DCBC /* GMEditTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMEditTaskViewController.h; sourceTree = "<group>"; };
+		2C4304241AF479DC00E5DCBC /* GMEditTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMEditTaskViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +124,12 @@
 				2C4303F71AF477E800E5DCBC /* GMAppDelegate.h */,
 				2C4303F81AF477E800E5DCBC /* GMAppDelegate.m */,
 				2C4303FA1AF477E800E5DCBC /* Main.storyboard */,
+				2C4304231AF479DC00E5DCBC /* GMEditTaskViewController.h */,
+				2C4304241AF479DC00E5DCBC /* GMEditTaskViewController.m */,
+				2C4304201AF479BD00E5DCBC /* GMDetailTaskViewController.h */,
+				2C4304211AF479BD00E5DCBC /* GMDetailTaskViewController.m */,
+				2C43041D1AF4799F00E5DCBC /* GMAddTaskViewController.h */,
+				2C43041E1AF4799F00E5DCBC /* GMAddTaskViewController.m */,
 				2C4303FD1AF477E800E5DCBC /* GMViewController.h */,
 				2C4303FE1AF477E800E5DCBC /* GMViewController.m */,
 				2C4304001AF477E800E5DCBC /* Images.xcassets */,
@@ -250,9 +265,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C4304221AF479BD00E5DCBC /* GMDetailTaskViewController.m in Sources */,
+				2C4304251AF479DC00E5DCBC /* GMEditTaskViewController.m in Sources */,
 				2C4303F91AF477E800E5DCBC /* GMAppDelegate.m in Sources */,
 				2C4303FF1AF477E800E5DCBC /* GMViewController.m in Sources */,
 				2C4303F51AF477E800E5DCBC /* main.m in Sources */,
+				2C43041F1AF4799F00E5DCBC /* GMAddTaskViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
