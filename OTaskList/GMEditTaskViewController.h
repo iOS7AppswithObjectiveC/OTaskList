@@ -7,10 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GMTask.h"
 
-@interface GMEditTaskViewController : UIViewController
+@protocol GMEditTaskViewControllerDelegate <NSObject>
+
+-(void)didUpdateTask;
+
+@end
+
+@interface GMEditTaskViewController : UIViewController <UITextFieldDelegate, UITextViewDelegate>
+
+@property (strong, nonatomic) GMTask *task;
+@property (weak, nonatomic) id <GMEditTaskViewControllerDelegate> delegate;
+
+
 - (IBAction)editSaveBarButtonPressed:(UIBarButtonItem *)sender;
 @property (strong, nonatomic) IBOutlet UITextView *editTextView;
 @property (strong, nonatomic) IBOutlet UITextField *editTaskNameTextfield;
+@property (strong, nonatomic) IBOutlet UIDatePicker *datePickerEdit;
 
 @end

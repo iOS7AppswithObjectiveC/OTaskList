@@ -7,10 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GMTask.h"
 
-@interface GMAddTaskViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UITextView *addTaskTextView;
-@property (strong, nonatomic) IBOutlet UITextField *taskNameTextField;
+@protocol GMAddTaskViewControllerDelegate <NSObject>
+
+-(void)didCancel;
+-(void)didAddTask:(GMTask *)task;
+
+@end
+
+@interface GMAddTaskViewController : UIViewController <UITextViewDelegate, UITextFieldDelegate>
+
+@property (weak, nonatomic) id <GMAddTaskViewControllerDelegate> delegate;
+
+@property (strong, nonatomic) IBOutlet UITextView *textView;
+@property (strong, nonatomic) IBOutlet UITextField *textField;
+@property (strong, nonatomic) IBOutlet UIDatePicker *datePicker;
+
+
 - (IBAction)addTaskButtonPressed:(UIButton *)sender;
 - (IBAction)cancelButtonPressed:(UIButton *)sender;
 

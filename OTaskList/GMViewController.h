@@ -7,10 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GMAddTaskViewController.h"
 
-@interface GMViewController : UIViewController
+#import "GMDetailTaskViewController.h"
+
+@interface GMViewController : UIViewController <GMAddTaskViewControllerDelegate, UITableViewDelegate, UITableViewDataSource, GMDetailTaskViewControllerDelegate>
+
+@property (strong, nonatomic) NSMutableArray *taskObjects;
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+
+
 - (IBAction)reorderBarButtonPressed:(UIBarButtonItem *)sender;
 - (IBAction)adTaskBarButtonPressed:(UIBarButtonItem *)sender;
-@property (strong, nonatomic) IBOutlet UITableView *tableViewMain;
+
 
 @end

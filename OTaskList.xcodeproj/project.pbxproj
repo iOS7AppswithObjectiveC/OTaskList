@@ -24,6 +24,7 @@
 		2C43041F1AF4799F00E5DCBC /* GMAddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C43041E1AF4799F00E5DCBC /* GMAddTaskViewController.m */; };
 		2C4304221AF479BD00E5DCBC /* GMDetailTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4304211AF479BD00E5DCBC /* GMDetailTaskViewController.m */; };
 		2C4304251AF479DC00E5DCBC /* GMEditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4304241AF479DC00E5DCBC /* GMEditTaskViewController.m */; };
+		2C4304291AF4838E00E5DCBC /* GMTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4304281AF4838E00E5DCBC /* GMTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		2C4304211AF479BD00E5DCBC /* GMDetailTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMDetailTaskViewController.m; sourceTree = "<group>"; };
 		2C4304231AF479DC00E5DCBC /* GMEditTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMEditTaskViewController.h; sourceTree = "<group>"; };
 		2C4304241AF479DC00E5DCBC /* GMEditTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMEditTaskViewController.m; sourceTree = "<group>"; };
+		2C4304271AF4838E00E5DCBC /* GMTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMTask.h; sourceTree = "<group>"; };
+		2C4304281AF4838E00E5DCBC /* GMTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,7 @@
 		2C4303EE1AF477E800E5DCBC /* OTaskList */ = {
 			isa = PBXGroup;
 			children = (
+				2C4304261AF4837300E5DCBC /* Models */,
 				2C4303F71AF477E800E5DCBC /* GMAppDelegate.h */,
 				2C4303F81AF477E800E5DCBC /* GMAppDelegate.m */,
 				2C4303FA1AF477E800E5DCBC /* Main.storyboard */,
@@ -165,6 +169,15 @@
 				2C4304101AF477E800E5DCBC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C4304261AF4837300E5DCBC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C4304271AF4838E00E5DCBC /* GMTask.h */,
+				2C4304281AF4838E00E5DCBC /* GMTask.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C4304221AF479BD00E5DCBC /* GMDetailTaskViewController.m in Sources */,
+				2C4304291AF4838E00E5DCBC /* GMTask.m in Sources */,
 				2C4304251AF479DC00E5DCBC /* GMEditTaskViewController.m in Sources */,
 				2C4303F91AF477E800E5DCBC /* GMAppDelegate.m in Sources */,
 				2C4303FF1AF477E800E5DCBC /* GMViewController.m in Sources */,
